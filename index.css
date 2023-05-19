@@ -1,0 +1,108 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: #1A1A1A;
+    margin: 0; /*Le quitamos margen al body*/
+}
+
+.container {
+    width: 100vw;
+    height: 100vh; /*Me coloca el 100% de la pantalla y ayuda a centrarlo.*/
+
+    display: flex; /*hacemos la caja Flexbox.*/
+    justify-content: center; /*Dejamos todo lo del container al medio horizontalmente.*/
+    align-items: center; /*Dejamos todo lo del container al medio verticalmente.*/
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /*Hacemos que las cajas dentro de CARD, estén ordenados en columnas*/
+    border: 2px solid #727272; /*Agregamos borde.*/
+    background: #333333; /*Color de la tarjeta.*/
+    height: 550px;
+    width: 330px;
+    border-radius: 20px; /*Redondeo de los bordes!*/
+    box-shadow: 3px 4px 2px; /*Sombra para la tarjeta.*/
+    overflow: hidden; /*Sirve para que nada se salga de la caja.*/
+}
+
+.card img {
+    width: 100%; /*img ocupa todo el espacio que necesita.*/
+}
+
+.cont_information {
+    text-align: center ; /*Se centran los "h" que hay en este contenedor.*/
+}
+
+.cont_information h3 {
+    margin-top: 10px; /*Le asignamos un margen superior.*/
+    margin-bottom: 0; /*Le asignamos un margen inferior.*/
+    color: #BFBFBF; /*Color de los caracteres.*/
+}
+
+.cont_information h4 {
+    margin-top: 10px;
+    color: #727272;
+}
+
+.social_media {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50%;
+}
+
+.yt_cont i{
+    background: #1A1A1A;
+    color: #BFBFBF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+}
+
+.yt_cont i:hover {
+    color: #FF0000;
+    transition: 0.3s;
+}
+
+.tw_cont i {
+    background: #1A1A1A;
+    color: #BFBFBF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+}
+
+.tw_cont i:hover{
+    color: #1DA1F2;
+    transition: 0.3s;
+}
+
+.git_cont i{
+    background: #1A1A1A;
+    color: #BFBFBF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+}
+
+.git_cont i:hover{
+    color: #c9510c;
+    transition: 0.3s;
+}
