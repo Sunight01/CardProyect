@@ -1,0 +1,98 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: #1a1a1a;
+  margin: 0; /*Le quitamos margen al body*/
+}
+
+.container {
+  width: 100vw;
+  height: 100vh; /*Me coloca el 100% de la pantalla y ayuda a centrarlo.*/
+
+  display: flex; /*hacemos la caja Flexbox.*/
+  justify-content: center; /*Dejamos todo lo del container al medio horizontalmente.*/
+  align-items: center; /*Dejamos todo lo del container al medio verticalmente.*/
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /*Hacemos que las cajas dentro de CARD, estén ordenados en columnas*/
+  border: 2px solid #727272; /*Agregamos borde.*/
+  background: #333333; /*Color de la tarjeta.*/
+  height: 550px;
+  width: 330px;
+  border-radius: 20px; /*Redondeo de los bordes!*/
+
+  overflow: hidden; /*Sirve para que nada se salga de la caja.*/
+  border-bottom: 5px #8b8b8b solid;
+
+  .card__head {
+    background: #000;
+    border-radius: 10px 10px 0 0;
+    height: 220px;
+    position: relative;
+    width: 100%;
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  .card__body {
+    height: 350px;
+    overflow: auto;
+    padding: 8px;
+
+    > h3 {
+      color: #fff;
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    > h4 {
+      color: #727272;
+      font-size: 1rem;
+      margin: auto;
+    }
+
+    > p {
+      color: #fff;
+      font-size: 12px;
+      margin: auto;
+    }
+  }
+
+  .card__footer {
+    > ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      margin: 0px;
+      padding: 13px;
+
+      > li {
+        > a {
+          background: #1a1a1a;
+          color: #bfbfbf;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out;
+          text-decoration: none !important;
+
+          &:hover {
+            background: #bfbfbf;
+            color: #1a1a1a;
+          }
+        }
+      }
+    }
+  }
+}
